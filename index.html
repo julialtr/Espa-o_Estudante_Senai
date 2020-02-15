@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço do Estudante SESI SENAI</title> <!--Título da Página-->
+    <link rel="stylesheet" href="style.css"> <!--Arquivo dos estilos-->
+</head>
+<body class="body">
+    <img class="imagem" src="https://estudante.sesisenai.org.br/img/login/logo.svg?">
+    <div class="caixa-login"> <!--cria uma classe da caixa com seus elementos dentro-->
+        <h1 class="titulo">Bem-Vindo</h1><!--Título da caixa-->
+        <h5 class="subtitulo">ao Espaço do Estudante</h5>
+        <input class="placeUsu" type="text" style="text-indent:17px;" placeholder="Usuário" id="nomeUsuario" > <br> <br> <!--Caixa de texto aonde o usuário pode escrever-->
+        <input class="placeSenha" type="password" style="text-indent:17px;" placeholder="Senha" id="senhaUsuario"> <br> <br> <!--tipo do texto, nome do texto e a variável que deve ser guardada a informação-->
+        <button class="botao" type="button" id="entra" onclick="entrar()">Entrar </button> <br> <br><!--Entrar é oq ta no botao, entrar() é a funcao-->
+        <a class="link" href="esquecerSenha.html">Esqueceu a senha? </a> <br> <br>
+       <img src="https://www.leforte.com.br/wp-content/uploads/2018/09/disponivel-no-google-play-logo-android-1.png" width="130"> <br>
+       <img src="https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad-mobile/fy18/general/appstore-itunes-pt-br.png" width="170"> <br>
+    </div>
+    
+    <script>
+        function entrar(){
+            var x = document.getElementById("nomeUsuario");
+            var y = document.getElementById("senhaUsuario");
+            if (x.value == "julia" && y.value == "123") {
+             alert("Acesso Permitido");   
+            }
+            else{
+                alert("Acesso Negado");
+            }
+        }
+    </script><!--é aonde são colocadas as funções-->
+    <!--nessas funcoes pega oq ele escreveu e coloca na variavel x e outra na y-->
+</body>
+</html>
